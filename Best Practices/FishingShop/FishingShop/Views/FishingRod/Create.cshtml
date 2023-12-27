@@ -1,0 +1,14 @@
+﻿@model FishingShop.Core.Models.FishingRodModel
+@{
+    ViewBag.Title = "Hoва въдица";
+}
+<h>
+    Нова въдица
+</h>
+
+<form asp-action="Create" asp-controller="FishingRod" method="post">
+    @Html.EditorFor(m=>m.Model)
+    @Html.EditorFor(m=>m.Price)
+    @Html.EditorFor(m=>m.Lenght)
+    <input type ="submit" value="Създай"/>
+</form>
